@@ -4,9 +4,10 @@
       <img src="../../assets/logo.png" class="header-img" />
       <a class="head-z">vue-ele-web</a>
     </div>
+    <div>
+    <HeaderMenu></HeaderMenu>
+    </div>
     <div class="head-msg">
-      <a class="header-msg">消息中心</a>
-      <a class="header-peo">个人信息</a>
       <el-button class="bnt-exit" type="primary" @click="btnexit"
         >退出登陆</el-button
       >
@@ -14,7 +15,9 @@
   </div>
 </template>
 <script>
+import HeaderMenu from './headermenu'
 export default {
+  components: { HeaderMenu },
   data() {
     return {
       activeIndex: '1'
@@ -36,6 +39,7 @@ export default {
   height: 100%;
   background-color: #373d41;
   color: white;
+  display: flex;
 }
 
 .header-img {

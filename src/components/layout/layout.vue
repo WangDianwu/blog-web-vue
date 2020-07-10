@@ -1,19 +1,24 @@
 <template>
-    <el-container>
-      <el-header>
-        <MyHeader></MyHeader>
-      </el-header>
-      <el-container>
+  <el-container>
+    <el-header>
+      <MyHeader></MyHeader>
+    </el-header>
+    <el-main>
+      <router-view></router-view>
+    </el-main>
+    <!-- <el-container>
         <Menu></Menu>
         <el-main>
           <router-view></router-view>
         </el-main>
-      </el-container>
-    </el-container>
+      </el-container> -->
+    <el-footer>Footer</el-footer>
+  </el-container>
 </template>
 <script>
 import MyHeader from '@/components/layout/header'
 import Menu from './menu'
+
 export default {
   components: { MyHeader, Menu },
   name: 'App'
@@ -50,9 +55,8 @@ body {
   background-color: #e9eef3;
   color: #333;
   text-align: center;
-  > div{
+  > div {
     height: 100%;
   }
 }
-
 </style>
