@@ -11,6 +11,7 @@
       mode="horizontal"
     >
       <el-menu-item index="home">首页</el-menu-item>
+      <el-menu-item index="userinfo">个人信息</el-menu-item>
       <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
         <template slot="title">
           <i class="el-icon-location"></i>

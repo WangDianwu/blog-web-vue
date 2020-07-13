@@ -1,5 +1,6 @@
 <template>
   <el-container>
+    <div class="cn-header"></div>
     <el-header>
       <MyHeader></MyHeader>
     </el-header>
@@ -25,17 +26,23 @@ export default {
 }
 </script>
 <style lang="scss">
+.cn-header{
+  height: 100px;
+  background-color: aqua;
+}
 body {
   margin: 0 auto;
 }
 
 .el-header,
 .el-footer {
+  width: 1366px;
   background-color: #b3c0d1;
   color: #333;
   text-align: center;
   line-height: 60px;
   padding: 0;
+  margin: 0 auto;
 }
 
 .el-container {
@@ -47,11 +54,14 @@ body {
   bottom: 0;
 }
 .el-header {
+  width: 1366px;
   padding: 0;
   z-index: 1000;
 }
 
 .el-main {
+  margin: 0 auto;
+  width: 1366px;
   background-color: #e9eef3;
   color: #333;
   text-align: center;
