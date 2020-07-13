@@ -13,7 +13,7 @@
           <router-view></router-view>
         </el-main>
       </el-container> -->
-    <el-footer>Footer</el-footer>
+    <!-- <el-footer>Footer</el-footer> -->
   </el-container>
 </template>
 <script>

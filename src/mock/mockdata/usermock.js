@@ -29,18 +29,18 @@ export default {
         {
           id: 1,
           authName: '管理',
-          path: 'users',
+          path: 'manage',
           children: [{
             id: 11,
             authName: '新增',
-            path: 'users',
+            path: 'add',
             children: [],
             order: null
           },
           {
             id: 12,
             authName: '修改',
-            path: 'users',
+            path: 'updata',
             children: [],
             order: null
           }],

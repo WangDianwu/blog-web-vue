@@ -1,5 +1,5 @@
 // 白名单
-export const WHITE_LIST = ['/login', '/', '/home']
+export const WHITE_LIST = ['/login', '/', '/home', '/add', '/userinfo']
 // 默认错误
 export const COMMON_ERROR = {
   code: -1,
