@@ -21,7 +21,7 @@ export const encrypt = (word, keyStr) => {
 // 解密
 export const decrypt = (word, keyStr) => {
   keyStr = keyStr || CRYPTO_KEY
-  const key = Utf8.parse(keyStr)// Latin1 w8m31+Yy/Nw6thPsMpO5fg==
+  const key = Utf8.parse(keyStr) // Latin1 w8m31+Yy/Nw6thPsMpO5fg==
   const decryptText = AES.decrypt(word, key, {
     mode: ECB,
     padding: Pkcs7

@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <div class="cn-header"></div>
-    <el-header>
+    <el-header >
       <MyHeader></MyHeader>
     </el-header>
     <el-main>
@@ -26,7 +26,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.cn-header{
+.cn-header {
   height: 100px;
   background-color: aqua;
 }

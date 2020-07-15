@@ -25,25 +25,25 @@ export default {
     method: 'get',
     success() {
       const res = success
-      success.data = [
-        {
+      success.data = [{
           id: 1,
           authName: '管理',
           path: 'manage',
           children: [{
-            id: 11,
-            authName: '新增',
-            path: 'add',
-            children: [],
-            order: null
-          },
-          {
-            id: 12,
-            authName: '修改',
-            path: 'updata',
-            children: [],
-            order: null
-          }],
+              id: 11,
+              authName: '新增',
+              path: 'add',
+              children: [],
+              order: null
+            },
+            {
+              id: 12,
+              authName: '修改',
+              path: 'updata',
+              children: [],
+              order: null
+            }
+          ],
           order: 1
         },
         {
@@ -72,8 +72,7 @@ export default {
     method: 'post',
     success() {
       const res = success
-      success.data = [
-        {
+      success.data = [{
           path: '/permission',
           component: 'layout/Layout',
           redirect: '/permission/index',
@@ -83,8 +82,7 @@ export default {
             icon: 'lock',
             roles: ['admin', 'editor']
           },
-          children: [
-            {
+          children: [{
               path: 'page',
               component: 'views/permission/page',
               name: 'PagePermission',
@@ -115,14 +113,16 @@ export default {
         {
           path: '/icon',
           component: 'layout/Layout',
-          children: [
-            {
-              path: 'index',
-              component: 'views/icons/index',
-              name: 'Icons',
-              meta: { title: 'Icons', icon: 'icon', noCache: true }
+          children: [{
+            path: 'index',
+            component: 'views/icons/index',
+            name: 'Icons',
+            meta: {
+              title: 'Icons',
+              icon: 'icon',
+              noCache: true
             }
-          ]
+          }]
         }
       ]
       return res
