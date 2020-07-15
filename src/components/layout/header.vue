@@ -5,12 +5,12 @@
       <a class="head-z">vue-ele-web</a>
     </div>
     <div>
-    <HeaderMenu></HeaderMenu>
+      <HeaderMenu></HeaderMenu>
     </div>
     <div class="head-msg">
-      <el-button class="bnt-exit" type="primary" @click="btnexit"
-        >退出登陆</el-button
-      >
+      <el-button class="bnt-exit" type="primary" @click="btnexit">
+        退出登陆
+      </el-button>
     </div>
   </div>
 </template>
@@ -24,9 +24,6 @@ export default {
     }
   },
   methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath)
-    },
     btnexit() {
       window.sessionStorage.clear()
       this.$router.push('/login')
@@ -74,6 +71,6 @@ export default {
   cursor: pointer;
   font-size: 10px;
   height: 35px;
-  margin-top:12px;
+  margin-top: 12px;
 }
 </style>

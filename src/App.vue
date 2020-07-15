@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app" >
+  <div id="app" class="app">
     <router-view></router-view>
   </div>
 </template>
@@ -10,9 +10,8 @@ export default {
 }
 </script>
 
-<style  lang='scss' scope>
-.app{
-  background-image: url('./assets/back.png') ;
+<style lang="scss" scope>
+.app {
+  background-image: url('./assets/back.png');
 }
-
 </style>

@@ -30,16 +30,16 @@ export const decrypt = (word, keyStr) => {
 }
 
 // md5
-export const md5 = (word) => {
+export const md5 = word => {
   return MD5(word).toString()
 }
 
 // base64 加密
-export const convertToBase64 = (word) => {
+export const convertToBase64 = word => {
   return Base64.stringify(word)
 }
 
 // base64 解密
-export const convertFromBase64 = (base64) => {
+export const convertFromBase64 = base64 => {
   return Base64.parse(base64)
 }

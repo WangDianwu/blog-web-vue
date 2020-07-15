@@ -4,7 +4,7 @@
       <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
     </el-breadcrumb>
     <el-card>
-        card
+      card
     </el-card>
   </div>
 </template>

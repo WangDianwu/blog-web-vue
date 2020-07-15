@@ -25,11 +25,13 @@ export default {
     method: 'get',
     success() {
       const res = success
-      success.data = [{
+      success.data = [
+        {
           id: 1,
           authName: '管理',
           path: 'manage',
-          children: [{
+          children: [
+            {
               id: 11,
               authName: '新增',
               path: 'add',
@@ -50,13 +52,15 @@ export default {
           id: 2,
           authName: '数据统计',
           path: 'reports',
-          children: [{
-            id: 21,
-            authName: '数据报表',
-            path: 'reports',
-            children: [],
-            order: null
-          }],
+          children: [
+            {
+              id: 21,
+              authName: '数据报表',
+              path: 'reports',
+              children: [],
+              order: null
+            }
+          ],
           order: 5
         }
       ]
@@ -72,7 +76,8 @@ export default {
     method: 'post',
     success() {
       const res = success
-      success.data = [{
+      success.data = [
+        {
           path: '/permission',
           component: 'layout/Layout',
           redirect: '/permission/index',
@@ -82,7 +87,8 @@ export default {
             icon: 'lock',
             roles: ['admin', 'editor']
           },
-          children: [{
+          children: [
+            {
               path: 'page',
               component: 'views/permission/page',
               name: 'PagePermission',
@@ -113,16 +119,18 @@ export default {
         {
           path: '/icon',
           component: 'layout/Layout',
-          children: [{
-            path: 'index',
-            component: 'views/icons/index',
-            name: 'Icons',
-            meta: {
-              title: 'Icons',
-              icon: 'icon',
-              noCache: true
+          children: [
+            {
+              path: 'index',
+              component: 'views/icons/index',
+              name: 'Icons',
+              meta: {
+                title: 'Icons',
+                icon: 'icon',
+                noCache: true
+              }
             }
-          }]
+          ]
         }
       ]
       return res

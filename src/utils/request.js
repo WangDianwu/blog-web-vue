@@ -23,21 +23,21 @@ request.interceptors.response.use(config => {
   return config
 })
 
-export const post = function (ops) {
+export const post = function(ops) {
   IS_FILE = false
   return request({
     method: 'post',
     ...ops
   })
 }
-export const get = function (ops) {
+export const get = function(ops) {
   IS_FILE = false
   return request({
     method: 'get',
     ...ops
   })
 }
-export const upload = function (ops) {
+export const upload = function(ops) {
   IS_FILE = true
   return request({
     method: 'post',

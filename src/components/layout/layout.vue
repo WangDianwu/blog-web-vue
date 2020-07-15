@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <div class="cn-header"></div>
-    <el-header >
+    <el-header>
       <MyHeader></MyHeader>
     </el-header>
     <el-main>

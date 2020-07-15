@@ -1,7 +1,4 @@
-import {
-  encrypt,
-  decrypt
-} from './secret'
+import { encrypt, decrypt } from './secret'
 
 // 设置缓存
 export const setCache = (key, data, expires = 0) => {
@@ -23,7 +20,10 @@ export const getCache = (key, defaultValue = {}) => {
   let returnObj = localStorage.getItem(key)
   if (returnObj) {
     returnObj = JSON.parse(decrypt(returnObj))
-    if (returnObj.expires !== 0 && now.getTime() > returnObj.expires.getTime()) {
+    if (
+      returnObj.expires !== 0 &&
+      now.getTime() > returnObj.expires.getTime()
+    ) {
       returnObj.data = defaultValue
     }
     return returnObj.data
@@ -32,7 +32,7 @@ export const getCache = (key, defaultValue = {}) => {
 }
 
 //  删除缓存
-export const removeCache = (key) => {
+export const removeCache = key => {
   localStorage.removeItem(key)
 }
 // 清空全部

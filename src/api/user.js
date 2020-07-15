@@ -1,7 +1,4 @@
-import {
-  get,
-  post
-} from '../utils/request'
+import { get, post } from '../utils/request'
 
 // 用户登录
 export const userlogin = param => {
@@ -12,7 +9,7 @@ export const userlogin = param => {
 }
 
 // 获取菜单
-export const getmenu = param => {
+export const getmenu = () => {
   return get({
     url: '/api/user/getmenu'
   })

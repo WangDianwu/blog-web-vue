@@ -20,17 +20,14 @@ const auth = {
     }
   },
   actions: {
-    [LOGIN]({
-      commit
-    }, payload) {
+    [LOGIN]({ commit }, payload) {
       return new Promise((resolve, reject) => {
         commit(SET_USER, payload)
         resolve()
       })
     },
-    [LOGIN_OUT]({
-      commit
-    }, payload) {
+    [LOGIN_OUT]({ commit }, payload) {
+      // eslint-disable-next-line no-unused-vars
       return new Promise((resolve, reject) => {
         commit(SET_USER, {})
         resolve()
